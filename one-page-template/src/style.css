@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    font-family: BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.9);;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+
+}
+nav div a  {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    margin-top: 10px;
+
+}
+ nav ul{
+    list-style: none;
+
+}
+ nav ul li {
+    display: inline-block;
+    margin-right: 12px;
+}
+ nav ul li a {
+    color: #fff;
+    font-size:20px;
+    text-decoration: none;
+}
+/* hero section */
+#id{
+    width: 100%;
+}
+ .hero-bg{
+    background-image: url(/images/hero-bg.jpg);
+    background-color: blue;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.hero-bg h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+}
+ .header-info {
+    text-align: center;
+ }
+
+ .header-info .tittle{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+ }
+ .header-info  .subtittle{
+    text-decoration: none;
+    color: #4e4e4e;    
+ }
+ p{
+    color: #4e4e4e; 
+ }
+  /* media quiers  */
+  @media only screen and (min-width: 641px) {
+    body{
+       
+    }
+
+  }
+
+section{
+    margin-top: 2rem;
+}
