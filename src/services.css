@@ -1,0 +1,181 @@
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px 0px ;
+    /* padding: 20px 0px 10px 56px; */
+}
+.services-grid .box{
+    /* height: 350px; */
+    width: auto;
+    background-color: white;
+    border-radius: 20px;
+    /* padding: 0px 0px 12px 0; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container{
+    /* margin: 0 85px 0 85px; */
+    /* background-color: aqua; */
+}
+.services .services-info p{
+
+}
+.services-grid .box .icon-box{
+    /* background-color: blue;
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 36px;
+}
+.services-grid .box .icon-box .inside-icon{
+    /* background-color: white;
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    height: 95px;
+    width: 95px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    border-radius: 50%;
+}
+.services-grid .box .icon-box .inside-icon span i{
+    font-size: 36px;
+}
+
+.services-grid .box .services-content h2{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.services-grid .box .services-content p{
+    display: inline-block;
+    text-align: center;
+    font-size: 19px;
+    margin-top: -6px;
+}
+.services-grid .box .icon-box .inside-icon:hover{
+    background-color: #0078ff!important;
+    color: white;
+    box-shadow: 0 0 0 10px  #cde1f8!important;
+}
+
+
+/* overlay section */
+.overlay{
+    background-image: url(/images/overlay-1.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 8rem 0;
+}
+.overlay .overlay-color{
+    background-color: #0078ff;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+.overlay-flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 100px;
+}
+.overlay-flex .ol-content{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.overlay-flex .ol-content h2,.overlay-flex .ol-content span {
+    color: white;
+}
+.overlay-flex .ol-content .i-circle {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+    border-radius: 50%;
+}
+.overlay-flex .ol-content .i-circle span i{  
+    font-size: 2rem;
+    line-height: 1.55;
+    text-align: center;
+    display: block;
+    color: white;
+
+}
+
+
+
+ /* media quiers  */
+ @media only screen and ( max-width: 450px){
+    .services-grid .box .services-content h2{
+        text-align: center;
+        font-size: 1.24rem;
+    }
+    .services-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container{
+        padding: 2rem;
+    }
+    .overlay-flex{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+   
+ }
+
+ @media only screen and (min-width:451px) and  (max-width:767px) {
+    .services-grid .box .services-content h2{
+        text-align: center;
+        font-size: 1.24rem;
+    }
+    .services-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container{
+        margin:5rem;
+    }
+    .services-grid .box {
+        width: 100%;
+    }
+    .services-grid {
+         padding: 0px; 
+    }
+    .overlay-flex{
+       margin:1rem;
+    }
+ }
+ @media only screen and (min-width:768px) {
+    .container{
+        margin: 4rem;
+    }
+    .services-grid {
+        padding: 0px !important;
+        gap: 2rem 1rem!important;
+    }
+    .services-grid .box .icon-box {
+        margin-top: 5rem;
+    }
+  
+ }
+
